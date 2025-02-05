@@ -1,0 +1,251 @@
+.dashboard-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Welcome Section */
+.dashboard-welcome {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-welcome h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.dashboard-welcome p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Dashboard Overview */
+.dashboard-overview {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.stat-card {
+  background: #ecf0f1;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 230px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.stat-card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #16a085;
+}
+
+/* Add Income */
+.add-income {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.add-income h3 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.add-income input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+}
+
+.add-income input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+.add-income button {
+  padding: 12px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-income button:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.recent-transactions h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.recent-transactions ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.recent-transactions li {
+  background: #fff;
+  margin: 12px 0;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Expense Chart */
+.expense-chart {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Add Expense Form */
+.add-expense {
+  margin-top: 50px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+.add-expense h3 {
+  font-size: 2rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.add-expense form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-expense input {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+}
+
+.add-expense input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+.add-expense button {
+  padding: 12px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-expense button:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-overview,
+  .recent-transactions,
+  .expense-chart {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .stat-card {
+      width: 100%;
+  }
+
+  .add-income,
+  .add-expense {
+      width: 90%;
+  }
+}

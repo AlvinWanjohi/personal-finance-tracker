@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa;
+  color: #444;
+  line-height: 1.6;
+}
+
+.settings-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.settings-container.dark {
+  background-color: #2d2d2d;
+  color: #ddd;
+}
+
+.settings-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Title Styling */
+.settings-container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.settings-container.dark .section {
+  background-color: #3a3a3a;
+}
+
+/* Section Headers */
+.settings-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Save Button */
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+  background-color: #c8c8c8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Links */
+.link {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Checkbox Styling */
+.checkbox-label {
+  font-size: 16px;
+  color: #333;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 20px;
+  }
+
+  .settings-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .settings-container h2 {
+    font-size: 22px;
+  }
+
+  .input-group input,
+  .input-group select,
+  .save-btn {
+    font-size: 14px;
+  }
+}

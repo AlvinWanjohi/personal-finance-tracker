@@ -1,0 +1,118 @@
+/* TransactionsPage Styling */
+.transactions-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f7f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transactions-table th, .transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.transactions-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.transactions-table td.income {
+  color: #2ecc71; /* Green for income */
+}
+
+.transactions-table td.expense {
+  color: #e74c3c; /* Red for expenses */
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.clear-history-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.clear-history-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Add Transaction Form Styling */
+.add-transaction {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-transaction input,
+.add-transaction select,
+.add-transaction button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-transaction button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-transaction button:hover {
+  background-color: #2980b9;
+}
+
+.add-transaction input,
+.add-transaction select {
+  background-color: #f9f9f9;
+}
+
+.add-transaction input:focus,
+.add-transaction select:focus,
+.add-transaction button:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transactions-table {
+    font-size: 0.9rem;
+  }
+
+  .transactions-container {
+    padding: 15px;
+  }
+
+  .add-transaction input,
+  .add-transaction select,
+  .add-transaction button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

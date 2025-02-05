@@ -1,0 +1,30 @@
+/* Dashboard Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .dashboard-header .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .dashboard-header .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .dashboard-header .logout {
+    color: red;
+    font-weight: bold;
+  }
+  

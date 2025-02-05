@@ -1,0 +1,96 @@
+/* General App styling */
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* App logo */
+.App-logo {
+  display: none; /* Remove spinning logo */
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 60px; /* Adjust to your needs */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* App-link */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Layout container (for pages) */
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Page-specific styles */
+.home-page {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.dashboard-page {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.transactions-page {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.settings-page {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Styling for forms, buttons, and inputs */
+input, select, textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

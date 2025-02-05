@@ -1,0 +1,237 @@
+/* Subscription Plans Container */
+.subscription-plans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .subscription-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscription-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  /* Subscription Plan Grid */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .subscription-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .subscription-card h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .subscribe-button {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border: none;
+  }
+  
+  /* Button Styles */
+  .free-trial .subscribe-button {
+    background: #3498db;
+    color: white;
+  }
+  
+  .free-trial .subscribe-button:hover {
+    background: #2980b9;
+  }
+  
+  .weekly .subscribe-button {
+    background: #2ecc71;
+    color: white;
+  }
+  
+  .weekly .subscribe-button:hover {
+    background: #27ae60;
+  }
+  
+  .monthly {
+    border-color: #f1c40f;
+    position: relative;
+  }
+  
+  .monthly .best-value {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f1c40f;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  
+  .monthly .subscribe-button {
+    background: #f39c12;
+    color: white;
+  }
+  
+  .monthly .subscribe-button:hover {
+    background: #e67e22;
+  }
+  
+  /* Discount Text */
+  .discount-text {
+    color: #27ae60;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  
+  /* Additional Info Section */
+  .additional-info {
+    margin-top: 3rem;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .additional-info h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .additional-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .additional-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .additional-info ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .testimonial {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial strong {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    margin-top: 3rem;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq div {
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plans-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .additional-info {
+      padding: 0 1rem;
+    }
+  
+    .testimonial {
+      max-width: 100%;
+    }
+  }
+  
